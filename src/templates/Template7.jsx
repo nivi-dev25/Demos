@@ -23,28 +23,28 @@ const Nav = styled.nav`
   right: 0;
   z-index: 100;
   backdrop-filter: blur(10px);
-  border-bottom: 2px solid #ff00ff;
+  border-bottom: 2px solid #3498db;
 `;
 
 const Logo = styled.h2`
-  color: #ff00ff;
+  color: #3498db;
   font-size: 1.5rem;
   font-weight: 700;
 `;
 
 const BackButton = styled(Link)`
-  background: linear-gradient(135deg, #ff00ff, #cc00cc);
+  background: linear-gradient(135deg, #3498db, #2980b9);
   color: white;
   padding: 0.6rem 1.8rem;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 700;
   transition: all 0.3s;
-  box-shadow: 0 4px 15px rgba(255, 0, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255, 0, 255, 0.5);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.5);
   }
 `;
 
@@ -60,7 +60,7 @@ const Hero = styled.div`
 const HeroTitle = styled.h1`
   font-size: 4rem;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #ff00ff, #cc00cc);
+  background: linear-gradient(135deg, #3498db, #2980b9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -74,7 +74,7 @@ const HeroTitle = styled.h1`
 
 const HeroTagline = styled.p`
   font-size: 1.5rem;
-  color: #ff00ff;
+  color: #3498db;
   text-align: center;
   margin-bottom: 3rem;
 `;
@@ -83,11 +83,11 @@ const CanvasContainer = styled.div`
   width: 100%;
   max-width: 800px;
   height: 500px;
-  background: radial-gradient(circle, #1a0a1a 0%, #050505 100%);
+  background: radial-gradient(circle, #1a2332 0%, #050505 100%);
   border-radius: 20px;
-  border: 2px solid #ff00ff;
+  border: 2px solid #3498db;
   margin: 2rem 0;
-  box-shadow: 0 0 50px rgba(255, 0, 255, 0.3);
+  box-shadow: 0 0 50px rgba(52, 152, 219, 0.3);
 `;
 
 const ProductSelector = styled.div`
@@ -99,9 +99,9 @@ const ProductSelector = styled.div`
 `;
 
 const ProductButton = styled.button`
-  background: ${props => props.$active ? 'linear-gradient(135deg, #ff00ff, #cc00cc)' : 'rgba(255, 0, 255, 0.1)'};
+  background: ${props => props.$active ? 'linear-gradient(135deg, #3498db, #2980b9)' : 'rgba(52, 152, 219, 0.1)'};
   color: white;
-  border: 2px solid #ff00ff;
+  border: 2px solid #3498db;
   padding: 0.8rem 1.5rem;
   border-radius: 25px;
   font-weight: 600;
@@ -109,7 +109,7 @@ const ProductButton = styled.button`
   transition: all 0.3s;
 
   &:hover {
-    background: linear-gradient(135deg, #ff00ff, #cc00cc);
+    background: linear-gradient(135deg, #3498db, #2980b9);
     transform: scale(1.05);
   }
 `;
@@ -122,7 +122,7 @@ const Section = styled.section`
 
 const SectionTitle = styled.h2`
   font-size: 2.5rem;
-  color: #ff00ff;
+  color: #3498db;
   margin-bottom: 2rem;
   text-align: center;
   font-weight: 700;
@@ -136,15 +136,15 @@ const ProductsGrid = styled.div`
 `;
 
 const ProductCard = styled.div`
-  background: linear-gradient(135deg, #1a0a1a 0%, #0a0a0a 100%);
+  background: linear-gradient(135deg, #1a2332 0%, #0a0a0a 100%);
   padding: 2rem;
   border-radius: 15px;
-  border: 2px solid #ff00ff;
+  border: 2px solid #3498db;
   transition: all 0.3s;
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(255, 0, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(52, 152, 219, 0.3);
   }
 `;
 
@@ -178,7 +178,7 @@ function RotatingSphere({ position }) {
 
   return (
     <Sphere ref={meshRef} position={position} args={[0.7, 32, 32]}>
-      <meshStandardMaterial color="#ff00ff" metalness={0.8} roughness={0.2} />
+      <meshStandardMaterial color="#3498db" metalness={0.8} roughness={0.2} />
     </Sphere>
   );
 }
@@ -193,7 +193,7 @@ function RotatingCylinder({ position }) {
 
   return (
     <Cylinder ref={meshRef} position={position} args={[0.5, 0.5, 2, 32]}>
-      <meshStandardMaterial color="#cc00cc" metalness={0.6} roughness={0.3} />
+      <meshStandardMaterial color="#2980b9" metalness={0.6} roughness={0.3} />
     </Cylinder>
   );
 }
@@ -203,7 +203,7 @@ function Template7() {
   const [selectedProduct, setSelectedProduct] = useState(0);
 
   const shapes = [
-    <RotatingBox key="box" position={[0, 0, 0]} color="#ff00ff" />,
+    <RotatingBox key="box" position={[0, 0, 0]} color="#3498db" />,
     <RotatingSphere key="sphere" position={[0, 0, 0]} />,
     <RotatingCylinder key="cylinder" position={[0, 0, 0]} />
   ];
@@ -245,7 +245,7 @@ function Template7() {
         </CanvasContainer>
 
         <div style={{ textAlign: 'center', maxWidth: '600px', padding: '0 2rem' }}>
-          <h3 style={{ color: '#ff00ff', fontSize: '1.5rem', marginBottom: '0.5rem' }}>
+          <h3 style={{ color: '#3498db', fontSize: '1.5rem', marginBottom: '0.5rem' }}>
             {data.products[selectedProduct].name}
           </h3>
           <p style={{ color: '#b0b0b0' }}>Category: {data.products[selectedProduct].category}</p>
@@ -258,7 +258,7 @@ function Template7() {
         <ProductsGrid>
           {data.capabilities3D.map((capability, index) => (
             <ProductCard key={index}>
-              <h3 style={{ color: '#ff00ff', fontSize: '1.5rem', marginBottom: '1rem' }}>{capability}</h3>
+              <h3 style={{ color: '#3498db', fontSize: '1.5rem', marginBottom: '1rem' }}>{capability}</h3>
               <p style={{ color: '#b0b0b0' }}>Advanced {capability.toLowerCase()} services for modern manufacturing</p>
             </ProductCard>
           ))}
@@ -266,7 +266,7 @@ function Template7() {
       </Section>
 
       <ContactSection>
-        <h2 style={{ color: '#ff00ff', fontSize: '2.5rem', marginBottom: '2rem' }}>Contact Us</h2>
+        <h2 style={{ color: '#3498db', fontSize: '2.5rem', marginBottom: '2rem' }}>Contact Us</h2>
         <div style={{ fontSize: '1.2rem', display: 'flex', justifyContent: 'center', gap: '3rem', flexWrap: 'wrap', color: '#b0b0b0' }}>
           <div>📞 {data.contact.phone}</div>
           <div>✉️ {data.contact.email}</div>

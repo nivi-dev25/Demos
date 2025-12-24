@@ -29,7 +29,7 @@ const Title = styled.h1`
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  background: linear-gradient(135deg, #e94560 0%, #0f3460 100%);
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -60,7 +60,7 @@ const TemplateCard = styled(motion.div)`
   transition: all 0.3s ease;
 
   &:hover {
-    border-color: #e94560;
+    border-color: #3498db;
     background: rgba(255, 255, 255, 0.08);
     transform: translateY(-5px);
   }
@@ -69,7 +69,7 @@ const TemplateCard = styled(motion.div)`
 const TemplateNumber = styled.div`
   font-size: 2rem;
   font-weight: 700;
-  color: #e94560;
+  color: #3498db;
   margin-bottom: 1rem;
 `;
 
@@ -94,8 +94,8 @@ const TemplateFeatures = styled.div`
 `;
 
 const FeatureTag = styled.span`
-  background: rgba(233, 69, 96, 0.2);
-  color: #e94560;
+  background: rgba(52, 152, 219, 0.2);
+  color: #3498db;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.75rem;

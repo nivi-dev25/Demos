@@ -19,13 +19,13 @@ const Nav = styled.nav`
 `;
 
 const Logo = styled.h2`
-  color: #ff6b6b;
+  color: #e67e22;
   font-size: 1.5rem;
   font-weight: 700;
 `;
 
 const BackButton = styled(Link)`
-  background: #ff6b6b;
+  background: #e67e22;
   color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 25px;
@@ -34,7 +34,7 @@ const BackButton = styled(Link)`
   transition: all 0.3s;
 
   &:hover {
-    background: #ff5252;
+    background: #d35400;
     transform: translateY(-2px);
   }
 `;
@@ -59,7 +59,7 @@ const Hero = styled.div`
 const HeroTitle = styled.h1`
   font-size: 3.5rem;
   margin-bottom: 1rem;
-  color: #ff6b6b;
+  color: #e67e22;
   font-weight: 800;
 `;
 
@@ -77,7 +77,7 @@ const Section = styled.section`
 
 const SectionTitle = styled.h2`
   font-size: 2.5rem;
-  color: #ff6b6b;
+  color: #e67e22;
   margin-bottom: 3rem;
   text-align: center;
   font-weight: 700;
@@ -91,22 +91,22 @@ const ServicesGrid = styled.div`
 `;
 
 const ServiceCard = styled.div`
-  background: rgba(255, 107, 107, 0.1);
+  background: rgba(230, 126, 34, 0.1);
   padding: 2.5rem;
   border-radius: 15px;
   border: 2px solid #444;
   transition: all 0.3s;
 
   &:hover {
-    border-color: #ff6b6b;
-    background: rgba(255, 107, 107, 0.15);
+    border-color: #e67e22;
+    background: rgba(230, 126, 34, 0.15);
     transform: translateY(-5px);
   }
 `;
 
 const ServiceTitle = styled.h3`
   font-size: 1.8rem;
-  color: #ff6b6b;
+  color: #e67e22;
   margin-bottom: 1rem;
 `;
 
@@ -125,7 +125,7 @@ const ServiceTypes = styled.div`
 
 const TypeTag = styled.span`
   background: #444;
-  color: #ff6b6b;
+  color: #e67e22;
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
   font-size: 0.85rem;
@@ -154,7 +154,7 @@ const MaterialItem = styled.div`
   font-weight: 600;
 
   &:hover {
-    border-color: #ff6b6b;
+    border-color: #e67e22;
     transform: scale(1.05);
   }
 `;
@@ -208,7 +208,7 @@ function Template4() {
       </Section>
 
       <MaterialsSection>
-        <SectionTitle style={{ color: '#ff6b6b' }}>Materials We Work With</SectionTitle>
+        <SectionTitle style={{ color: '#e67e22' }}>Materials We Work With</SectionTitle>
         <MaterialsList>
           {data.materials.map((material, index) => (
             <MaterialItem key={index}>{material}</MaterialItem>
@@ -217,7 +217,7 @@ function Template4() {
       </MaterialsSection>
 
       <ContactSection>
-        <h2 style={{ color: '#ff6b6b', fontSize: '2rem', marginBottom: '2rem' }}>Contact Us</h2>
+        <h2 style={{ color: '#e67e22', fontSize: '2rem', marginBottom: '2rem' }}>Contact Us</h2>
         <ContactInfo>
           <div>📞 {data.contact.phone}</div>
           <div>✉️ {data.contact.email}</div>

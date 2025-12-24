@@ -22,7 +22,7 @@ const Logo = styled.h2`
 `;
 
 const BackButton = styled(Link)`
-  background: #e94560;
+  background: #2c3e50;
   color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 5px;
@@ -30,7 +30,7 @@ const BackButton = styled(Link)`
   transition: background 0.3s;
 
   &:hover {
-    background: #d63651;
+    background: #34495e;
   }
 `;
 
@@ -86,7 +86,7 @@ const ServiceCard = styled.div`
 
 const ServiceTitle = styled.h3`
   font-size: 1.5rem;
-  color: #e94560;
+  color: #2c3e50;
   margin-bottom: 1rem;
 `;
 

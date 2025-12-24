@@ -209,12 +209,14 @@ export const sharedAssets = {
     primary: "#1a1a2e",
     secondary: "#16213e",
     accent: "#0f3460",
-    highlight: "#e94560",
+    highlight: "#3498db",
     light: "#f1f1f1",
     white: "#ffffff",
     steel: "#8c8c8c",
     metal: "#5a5a5a",
-    rubber: "#2c2c2c",
-    gold: "#d4af37"
+    rubber: "#e67e22",
+    gold: "#d4af37",
+    green: "#00cc88",
+    blue: "#3498db"
   }
 };

@@ -46,7 +46,8 @@ const BackButton = styled(Link)`
 `;
 
 const Hero = styled(motion.div)`
-  background: linear-gradient(135deg, #0a0e27 0%, #1a2332 50%, #0a0e27 100%);
+  background: linear-gradient(rgba(10, 14, 39, 0.85), rgba(26, 35, 50, 0.85)), 
+              url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&h=600&fit=crop') center/cover;
   padding: 8rem 2rem;
   text-align: center;
   position: relative;

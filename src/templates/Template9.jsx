@@ -59,6 +59,8 @@ const Hero = styled(motion.div)`
   padding: 4rem 2rem;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(26, 26, 26, 0.9)), 
+              url('https://images.unsplash.com/photo-1565008576549-57569a49371d?w=1600&h=900&fit=crop') center/cover;
 
   &::before {
     content: '';

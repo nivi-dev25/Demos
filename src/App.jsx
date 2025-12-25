@@ -15,7 +15,8 @@ import Template10 from './templates/Template10';
 
 const DemoContainer = styled.div`
   min-height: 100vh;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  background: linear-gradient(rgba(26, 26, 46, 0.95), rgba(22, 33, 62, 0.95)), 
+              url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&h=900&fit=crop') center/cover fixed;
   padding: 2rem;
 `;
 

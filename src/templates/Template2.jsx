@@ -39,7 +39,8 @@ const BackButton = styled(Link)`
 `;
 
 const Hero = styled.div`
-  background: linear-gradient(135deg, #5a5a5a 0%, #3a3a3a 100%);
+  background: linear-gradient(rgba(90, 90, 90, 0.9), rgba(58, 58, 58, 0.9)), 
+              url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1600&h=600&fit=crop') center/cover;
   padding: 5rem 2rem;
   text-align: center;
   border-bottom: 5px solid #8c8c8c;

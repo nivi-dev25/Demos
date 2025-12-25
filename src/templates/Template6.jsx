@@ -57,7 +57,8 @@ const Hero = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 50%, #0d0d0d 100%);
+  background: linear-gradient(rgba(13, 13, 13, 0.9), rgba(26, 26, 26, 0.9)), 
+              url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1600&h=900&fit=crop') center/cover;
   position: relative;
   overflow: hidden;
 `;

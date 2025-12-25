@@ -51,7 +51,8 @@ const SplitHero = styled.div`
 `;
 
 const LeftPane = styled(motion.div)`
-  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  background: linear-gradient(rgba(26, 26, 26, 0.95), rgba(42, 42, 42, 0.95)), 
+              url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&h=900&fit=crop') center/cover;
   color: white;
   display: flex;
   flex-direction: column;
@@ -64,7 +65,8 @@ const LeftPane = styled(motion.div)`
 `;
 
 const RightPane = styled(motion.div)`
-  background: linear-gradient(135deg, #d4af37 0%, #b8960f 100%);
+  background: linear-gradient(rgba(212, 175, 55, 0.95), rgba(184, 150, 15, 0.95)), 
+              url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&h=900&fit=crop') center/cover;
   display: flex;
   align-items: center;
   justify-content: center;

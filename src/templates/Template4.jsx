@@ -40,7 +40,8 @@ const BackButton = styled(Link)`
 `;
 
 const Hero = styled.div`
-  background: linear-gradient(135deg, #333 0%, #1a1a1a 100%);
+  background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(26, 26, 26, 0.9)), 
+              url('https://images.unsplash.com/photo-1614575540643-651a47928d89?w=1600&h=600&fit=crop') center/cover;
   padding: 5rem 2rem;
   text-align: center;
   position: relative;
@@ -52,7 +53,7 @@ const Hero = styled.div`
     left: 0;
     right: 0;
     height: 5px;
-    background: linear-gradient(90deg, #ff6b6b, #444, #ff6b6b);
+    background: linear-gradient(90deg, #e67e22, #444, #e67e22);
   }
 `;
 
